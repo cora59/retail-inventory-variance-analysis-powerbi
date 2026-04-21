@@ -1,6 +1,6 @@
 # 📊 Retail Inventory Variance & Shrinkage Analysis (Power BI)
 
-![Dashboard Preview](dashboard.png)
+![Dashboard Preview](dashboard_v2.png)
 
 ---
 

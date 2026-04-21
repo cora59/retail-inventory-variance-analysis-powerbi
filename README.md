@@ -4,97 +4,150 @@
 
 ---
 
-## 📌 Overview
-This project analyzes inventory performance across multiple retail stores, focusing on stock discrepancies, shrinkage, and product-level variance.
+## 📌 Overview  
+This project presents a **Retail Inventory Stock Count Dashboard** designed to monitor stock accuracy, identify shrinkage, and highlight product-level discrepancies across multiple stores.
 
-The dashboard provides visibility into:
-- Differences between expected and physical stock
-- Shrinkage patterns (known vs unknown)
-- High-risk products contributing to inventory loss
+It provides real-time visibility into:
+- Stock variances between system records and physical counts  
+- Shrinkage trends (Known vs Unknown losses)  
+- High-risk products and stores contributing to inventory loss  
+- Inventory efficiency through turnover metrics  
 
 ---
 
-## 🧩 Business Problem
-Retail businesses often face inventory inconsistencies due to:
-- Stock counting errors  
-- Transfer mismatches between warehouse and stores  
-- Theft or unrecorded damages  
+## 🧩 Business Problem  
+Retail operations often struggle with:
+- Inaccurate stock records due to manual counting errors  
+- Untracked transfers between locations  
+- Theft, damages, or undocumented stock losses  
 
-These issues lead to inaccurate reporting and financial losses.
+These issues lead to:
+- Financial leakage  
+- Poor replenishment decisions  
+- Reduced operational efficiency  
 
-This dashboard helps identify and quantify these discrepancies.
+👉 This dashboard helps management **quantify, trace, and reduce inventory losses**.
+
+---
+
+## 📊 Dashboard Highlights  
+
+### 🔑 Key KPIs (Top Section)
+- **₦1.96B+ Revenue**
+- **₦2.12B Avg Inventory**
+- **₦4.12B Inventory Available for Sales**
+- **2,575 Orders**
+- **44.88% Gross Margin**
+
+---
+
+### 📉 Shrinkage Analysis
+- Visual gauge showing **shrinkage rate (~0.05%)**
+- Comparison of:
+  - **Known Shrinkage (₦2.12B)**  
+  - **Unknown Shrinkage (₦88M)**  
+
+👉 Helps distinguish **operational issues vs unexplained losses**
+
+---
+
+### 📦 Product-Level Insights
+- Table showing:
+  - Opening Stock  
+  - Physical Count  
+  - Quantity Sold  
+  - Variance  
+  - Financial impact  
+
+- **Top 5 Products by Variance**
+  - Identifies items driving the highest discrepancies  
+
+---
+
+### 🏬 Store-Level Performance
+- **Variance Value by Store**
+  - Highlights stores with:
+    - High positive variance (overstock issues)  
+    - Negative variance (possible shrinkage or errors)  
+
+---
+
+### 🔄 Inventory Efficiency
+- **Inventory Turnover: 0.93**
+  - Indicates how efficiently inventory is being sold  
 
 ---
 
 ## ⚙️ Data Preparation (Power Query)
-To ensure data privacy and portfolio safety:
 
-- Store names anonymized → `Store 001, Store 002...`
-- Product names anonymized → `Product 001, Product 002...`
-- Financial values scaled to protect sensitive business data
-- Data cleaned using Power Query transformations:
-  - Removed blank columns
-  - Created mapping tables for stores and products
-  - Standardized formats for analysis
+To ensure data privacy and usability:
+- Store names anonymized → `Store1, Store2...`
+- Product names anonymized → `Product 001...`
+- Financial values adjusted for confidentiality  
+
+Data transformations:
+- Removed null/irrelevant fields  
+- Standardized formats  
+- Built clean data model for reporting  
 
 ---
 
-## 📐 Key Metrics & Calculations
+## 📐 Key Calculations  
 
 - **Expected Stock**  
-  = Opening Stock + Transfers – Sales – Damages  
+  `= Opening Stock + Transfers – Sales – Damages`  
 
 - **Variance (Units)**  
-  = Physical Count – Expected Stock  
+  `= Physical Count – Expected Stock`  
 
-- **Shrinkage Value**  
-  = Variance × Unit Cost  
+- **Variance Value**  
+  `= Variance × Unit Cost`  
 
 - **Inventory Turnover**  
-  = Sales ÷ Average Inventory  
+  `= Sales ÷ Average Inventory`  
 
 - **Shrinkage %**  
-  = Total Shrinkage ÷ Total Inventory Value  
+  `= Total Shrinkage ÷ Total Inventory Value`  
 
 ---
 
-## 📊 Dashboard Features
+## 🔍 Key Insights  
 
-- Inventory overview KPIs (Revenue, Inventory Value, Orders, Margin)
-- Shrinkage breakdown (Known vs Unknown)
-- Top 5 products with highest variance
-- Product-level variance analysis
-- Store filtering and time-based slicing
-- Inventory turnover insights
-
----
-
-## 🔍 Key Insights
-
-- A shrinkage rate of approximately **0.29%** was observed  
-- A small number of products drive the majority of inventory variance  
-- High-value items contribute disproportionately to shrinkage risk  
-- Variance patterns indicate potential operational inefficiencies in stock handling  
+- Shrinkage is **low (~0.05%)**, indicating generally strong control  
+- However, **unknown shrinkage still exists**, requiring investigation  
+- A **small group of products drives most variance** (Pareto effect)  
+- Certain stores show **significant variance imbalance**, suggesting:
+  - Process gaps  
+  - Counting inconsistencies  
+  - Possible stock handling issues  
 
 ---
 
-## 🛠 Tools Used
-
-- Power BI  
-- Power Query  
-- Excel  
-
----
-
-## 📁 Files Included
-
-- `Portfolio_Inventory_Project.pbix`
-- `Portfolio_Inventory_Project.xlsx`
-- `dashboard.png`
+## 🛠 Tools Used  
+- **Power BI**  
+- **Power Query**  
+- **Excel**  
 
 ---
 
-## ⚠️ Disclaimer
+## 📁 Project Files  
+- `Portfolio_Inventory_Project.pbix`  
+- `Portfolio_Inventory_Project.xlsx`  
+- `dashboard.png`  
 
+---
+
+## ⚠️ Disclaimer  
 This project uses **anonymized and modified data** for demonstration purposes.  
-All sensitive business information has been removed while preserving the analytical structure.
+All sensitive business information has been removed while preserving analytical integrity.
+
+---
+
+## 💡 Use Case  
+This dashboard can be adapted for:
+- Supermarkets  
+- Pharmacies  
+- Warehouses  
+- FMCG businesses  
+
+To improve stock accuracy and reduce inventory losses.
